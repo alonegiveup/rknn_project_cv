@@ -29,3 +29,5 @@ set(CMAKE_INSTALL_RPATH "\${ORIGIN}/../lib")
 set(LIBRKNN_API_PATH ${CMAKE_SOURCE_DIR}/3rd/librknn_api)
 include_directories(${LIBRKNN_API_PATH}/include)
 link_directories(${LIBRKNN_API_PATH}/lib)
+
+add_subdirectory(retinaface)

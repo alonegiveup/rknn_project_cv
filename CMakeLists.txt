@@ -30,4 +30,8 @@ set(LIBRKNN_API_PATH ${CMAKE_SOURCE_DIR}/3rd/librknn_api)
 include_directories(${LIBRKNN_API_PATH}/include)
 link_directories(${LIBRKNN_API_PATH}/lib)
 
+#opencv
+set(OpenCV_DIR ${CMAKE_SOURCE_DIR}/3rd/opencv/lib/cmake/opencv4)
+find_package(OpenCV REQUIRED)
+
 add_subdirectory(retinaface)
